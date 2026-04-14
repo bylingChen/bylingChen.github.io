@@ -1,0 +1,193 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Byling - B 端产品实战专家</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+        .hero-gradient{background:linear-gradient(135deg,#667eea 0%,#764ba2 100%)}
+        .card-hover{transition:all 0.3s}.card-hover:hover{transform:translateY(-4px);box-shadow:0 20px 40px rgba(0,0,0,0.1)}
+        .smooth-scroll{scroll-behavior:smooth}
+        @keyframes fadeInUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+        .animate-fade-in-up{animation:fadeInUp 0.6s ease-out forwards}
+    </style>
+</head>
+<body class="bg-white text-gray-900 smooth-scroll"><nav class="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-md z-50 border-b border-gray-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-12">
+            <a href="#" class="text-xl font-semibold">Byling</a>
+            <div class="hidden md:block">
+                <div class="flex items-center space-x-8">
+                    <a href="#home" class="text-sm text-gray-600 hover:text-gray-900">首页</a>
+                    <a href="#projects" class="text-sm text-gray-600 hover:text-gray-900">项目</a>
+                    <a href="#about" class="text-sm text-gray-600 hover:text-gray-900">关于</a>
+                    <a href="#contact" class="text-sm text-gray-600 hover:text-gray-900">联系</a>
+                </div>
+            </div>
+            <button id="mobile-menu-btn" class="md:hidden text-gray-600"><i class="fas fa-bars text-xl"></i></button>
+        </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200 px-4 py-3 space-y-3">
+        <a href="#home" class="block text-sm text-gray-600">首页</a>
+        <a href="#projects" class="block text-sm text-gray-600">项目</a>
+        <a href="#about" class="block text-sm text-gray-600">关于</a>
+        <a href="#contact" class="block text-sm text-gray-600">联系</a>
+    </div>
+</nav>
+<section id="home" class="pt-20 pb-16 md:pt-32 md:pb-24 hero-gradient">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h1 class="text-4xl md:text-6xl font-bold text-white mb-4 animate-fade-in-up">Byling</h1>
+        <p class="text-xl md:text-2xl text-white/90 mb-2 animate-fade-in-up">B 端产品实战专家</p>
+        <p class="text-base md:text-lg text-white/80 mb-8 animate-fade-in-up">互联网产品经理 | 供应链 ERP 专家 | 中小企业数字化实践者</p>
+        <div class="inline-flex items-center bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full text-white text-sm mb-8">
+            <i class="fas fa-briefcase mr-2"></i>7 年 B 端产品深耕者
+        </div>
+        
+    </div>
+</section>
+<section id="projects" class="py-16 md:py-24 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">项目作品</h2>
+            <p class="text-lg text-gray-600">用技术驱动商业价值，用产品改变工作方式</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white rounded-2xl p-8 card-hover">
+                <div class="w-14 h-14 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mb-6">
+                    <i class="fas fa-warehouse text-white text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">进销存系统</h3>
+                <p class="text-gray-600 text-sm mb-4">企业供应链智能管控中枢，已助力多家企业实现采销存全流程自动化。用数据替代人工，显著提升库存周转与管理效率。</p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-blue-50 text-blue-600 text-xs rounded-full">供应链</span>
+                    <span class="px-3 py-1 bg-blue-50 text-blue-600 text-xs rounded-full">ERP</span>
+                    <span class="px-3 py-1 bg-blue-50 text-blue-600 text-xs rounded-full">自动化</span>
+                </div>
+            </div>
+            <div class="bg-white rounded-2xl p-8 card-hover">
+                <div class="w-14 h-14 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center mb-6">
+                    <i class="fas fa-shopping-cart text-white text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">订货商城</h3>
+                <p class="text-gray-600 text-sm mb-4">渠道数字化订货门户，一键打通上下游交易。支持多级定价与自动分单，告别低效线下对接，大幅提升订货效率，降低渠道沟通与运营成本。</p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-purple-50 text-purple-600 text-xs rounded-full">电商</span>
+                    <span class="px-3 py-1 bg-purple-50 text-purple-600 text-xs rounded-full">渠道管理</span>
+                    <span class="px-3 py-1 bg-purple-50 text-purple-600 text-xs rounded-full">数字化</span>
+                </div>
+            </div>
+            <div class="bg-white rounded-2xl p-8 card-hover">
+                <div class="w-14 h-14 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center mb-6">
+                    <i class="fas fa-bullhorn text-white text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">营销系统</h3>
+                <p class="text-gray-600 text-sm mb-4">全域智能营销增长工具，覆盖拉新转化复购全链路。无需开发即可配置营销活动，精准触达客户，有效提升转化与复购，助力企业业绩持续增长。</p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-green-50 text-green-600 text-xs rounded-full">营销</span>
+                    <span class="px-3 py-1 bg-green-50 text-green-600 text-xs rounded-full">增长</span>
+                    <span class="px-3 py-1 bg-green-50 text-green-600 text-xs rounded-full">SaaS</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="about" class="py-16 md:py-24 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">关于我</h2>
+        </div>
+        <div class="bg-gray-50 rounded-3xl p-8 md:p-12">
+            <div class="text-center mb-8">
+                <div class="w-24 h-24 rounded-full mx-auto mb-4 overflow-hidden border-4 border-white shadow-lg"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop" alt="Byling" class="w-full h-full object-cover"></div>
+                <h3 class="text-2xl font-bold mb-2">Byling</h3>
+                <p class="text-blue-600 font-medium">B 端产品实战专家</p>
+            </div>
+            <div class="space-y-4 text-gray-700 leading-relaxed">
+                <p class="text-center text-lg font-medium text-gray-800">供应链 ERP 专家，擅长将复杂的业务流程转化为简洁高效的产品解决方案。</p><p class="text-center text-lg font-medium text-gray-800">中小企业数字化实践者，通过技术创新帮助企业提升运营效率，实现数字化转型。</p>
+            </div>
+            <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="bg-white rounded-xl p-4 text-center">
+                    <div class="text-3xl font-bold text-blue-600 mb-1">7+</div>
+                    <div class="text-sm text-gray-600">年 B 端产品经验</div>
+                </div>
+                <div class="bg-white rounded-xl p-4 text-center">
+                    <div class="text-3xl font-bold text-blue-600 mb-1">10+</div>
+                    <div class="text-sm text-gray-600">成功项目交付</div>
+                </div>
+                <div class="bg-white rounded-xl p-4 text-center">
+                    <div class="text-3xl font-bold text-blue-600 mb-1">50+</div>
+                    <div class="text-sm text-gray-600">企业合作伙伴</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="contact" class="py-16 md:py-24 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">联系我</h2>
+            <p class="text-lg text-gray-600">期待与您合作，共创数字化未来</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <a href="tel:13570411533" class="bg-white rounded-2xl p-8 card-hover block">
+                <div class="flex items-center">
+                    <div class="w-14 h-14 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mr-4">
+                        <i class="fas fa-phone text-white text-xl"></i>
+                    </div>
+                    <div>
+                        <div class="text-sm text-gray-600 mb-1">电话</div>
+                        <div class="text-lg font-semibold">135 7041 1533</div>
+                    </div>
+                </div>
+            </a>
+            <div class="bg-white rounded-2xl p-8 card-hover">
+                <div class="flex items-center">
+                    <div class="w-14 h-14 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center mr-4">
+                        <i class="fab fa-weixin text-white text-xl"></i>
+                    </div>
+                    <div>
+                        <div class="text-sm text-gray-600 mb-1">微信</div>
+                        <div class="text-lg font-semibold">abc123</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="bg-gray-900 py-8">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-400 text-sm">
+        <p>&copy; 2024 Byling. All rights reserved.</p>
+    </div>
+</footer>
+<script>
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenuBtn.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); });
+    mobileMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => { mobileMenu.classList.add('hidden'); });
+    });
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) { target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+        });
+    });
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate-fade-in-up');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.card-hover').forEach(card => {
+        card.style.opacity = '0';
+        observer.observe(card);
+    });
+</script>
+</body>
+</html>
